@@ -1,5 +1,5 @@
-const CLIENT_ID = 'YOUR_CLIENT_ID_HERE'; // Replace with your Client ID
-const API_KEY = 'YOUR_API_KEY_HERE';     // Replace with your API Key
+const CLIENT_ID = '601248846206-gnvao70v6fvrj9rsqcnegtghdoq7a583.apps.googleusercontent.com'; // Replace with your Client ID
+const API_KEY = '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';     // Replace with your API Key
 const SCOPES = 'https://www.googleapis.com/auth/drive.file';
 
 // Initialize Google API client
