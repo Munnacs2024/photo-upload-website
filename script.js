@@ -1,6 +1,7 @@
 const CLIENT_ID = '601248846206-gnvao70v6fvrj9rsqcnegtghdoq7a583.apps.googleusercontent.com'; // Replace with your Client ID
 const API_KEY = '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';     // Replace with your API Key
 const SCOPES = 'https://www.googleapis.com/auth/drive.file';
+const REDIRECT_URI = 'https://munnacs2024.github.io/photo-upload-website/'; // Your GitHub Pages URL
 
 // Initialize Google API client
 function initializeGapi() {
@@ -9,6 +10,7 @@ function initializeGapi() {
             apiKey: API_KEY,
             clientId: CLIENT_ID,
             scope: SCOPES,
+            redirectUri: REDIRECT_URI // Set the redirect URI for OAuth flow
         }).then(() => {
             console.log('Google API initialized.');
         });
@@ -61,3 +63,4 @@ document.getElementById('uploadForm').addEventListener('submit', async (event) =
 
 // Load the GAPI library and initialize
 initializeGapi();
+
